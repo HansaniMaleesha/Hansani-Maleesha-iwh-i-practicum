@@ -1,0 +1,32 @@
+doctype html 
+html(lang="en")
+  head 
+    title Add New Pet
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body 
+    .form-body
+      .form-wrapper 
+        h1 Add New Pet
+        form(method="POST", action="/update-cobj")
+          .form-group
+            label(for="name") Pet's Name 
+            input(type="text", name="name", id="name", required)
+
+          .form-group
+            label(for="age") Pet's Age 
+            input(type="number", name="age", id="age", required)
+
+          .form-group
+            label(for="breed") Pet's Breed 
+            input(type="text", name="breed", id="breed", required)
+
+          .form-group
+            label(for="type") Pet's Type 
+            input(type="text", name="type", id="type", required)
+
+          .form-group
+            label(for="owner") Pet's Owner 
+            input(type="text", name="owner", id="owner", required)
+
+          input.btn(type="submit", value="Submit")

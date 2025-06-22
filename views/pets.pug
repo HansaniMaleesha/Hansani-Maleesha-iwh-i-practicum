@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head 
+    title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body    
+    h1 Pets
+
+    a.add-link(href="/update-cobj") Add to this table
+
+    table.pet-table
+      thead
+        tr
+          th Name
+          th Type
+          th Age
+          th Breed
+          th Owner
+      tbody
+        each pet in data
+          tr
+            td= pet.properties.pet_name
+            td= pet.properties.pet_type
+            td= pet.properties.pet_age
+            td= pet.properties.pet_breed
+            td= pet.properties.pet_owner
